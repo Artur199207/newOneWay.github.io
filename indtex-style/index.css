@@ -2032,8 +2032,8 @@ a {
         flex: 1 0 319px;
     }
 }
-@media screen and (min-width:320px) and (max-width:2280px) {
-    .content-sochub{
+@media screen and (min-width:786px) and (max-width:2280px) {
+    .soc-web{
         display: none;
     }
 }
