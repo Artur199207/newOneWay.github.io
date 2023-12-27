@@ -2353,3 +2353,13 @@ a {
         width: 129px;
     }
 }
+@media screen and (min-width:1920px) {
+    .container-navigation{
+        width: 100%;
+        margin: auto;
+    }
+    .content-footer{
+        width: 100%;
+        margin: auto;
+    }
+}
