@@ -1,0 +1,353 @@
+.wrapper-login{
+    display: flex;
+    gap: 280px;
+}
+.content-login-logon{
+    padding-inline: 40px;
+    margin: 80px;
+}
+.content_page-img{
+    max-width: 592px;
+    width: 100%;
+    min-height: 592px;
+    background-image: url(../image/Sign-in-page.svg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.content-logon{
+ max-width: 808px;
+ width: 100%;
+ min-height: 620px;
+ padding-inline: 60px;
+ padding: 60px;
+  box-shadow: 0px 4px 32px 0px var(--color-number10);
+  border: 1px solid var(--color-number11);
+  border-radius: 4px;
+}
+.content-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.content-form-text h1{
+font-size: 64px;
+font-weight: 700;
+line-height: 75px;
+letter-spacing: 0.18em;
+text-align: left;
+color: var( --color-number2);
+}
+.wrapper-type span{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+      color: var(--color-number3);
+}
+.wrapper-type input{
+    max-width: 688px;
+    width: 100%;
+    min-height: 70px;
+    border: 1px solid var(--color-number2);
+    border-radius: 4px;
+font-size: 24px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+color: var(--color-number12);
+padding: 10px 21px;
+}
+.wrapper-type input:focus-visible{
+    outline: none;
+    border:solid 1px var(--color-number7);
+}
+.content-form-type{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.wrapper-type{
+    display: flex;
+    flex-direction: column;
+    gap:10px ;
+    align-items: flex-start;
+}
+.content-sign span,.content-sign label{
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: right;
+color: var(--color-number3);
+}
+
+.content-sign{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-button .btn{
+    max-width: 263px;
+    width: 100%;
+    min-height: 44px;
+    border-radius: 4px;
+    background: var(--color-number2);
+font-size: 20px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: center;
+color: var(--color-number6);
+border: none;
+cursor: pointer;
+}
+.wrapper-sign-on span{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: right;
+      color: var(--color-number3);
+}
+.wrapper-sign-on span>span{
+font-size: 20px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: right;
+color: var(--color-number7);
+text-decoration: underline;
+}
+.content-checkbox{
+    display: none;
+}
+.main { 
+    display: block; 
+    position: relative; 
+    padding-left: 36px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    margin-bottom: unset;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: right;
+
+  } 
+  
+  input[type=checkbox] { 
+    visibility: hidden; 
+  } 
+  
+  .geekmark { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+  width: 22px !important;
+  height: 22px !important; 
+   border: solid 1px;
+  } 
+  
+  
+  .main input:checked ~ .geekmark { 
+    background-color:var(--color-number2); 
+    border: none;
+  } 
+  
+  .geekmark:after { 
+    content: ""; 
+    position: absolute; 
+    display: none; 
+  } 
+  
+  .main input:checked ~ .geekmark:after { 
+    display: block; 
+  } 
+  
+  .main .geekmark:after { 
+    left: 6px; 
+    bottom: 5px; 
+    width: 6px; 
+    height: 12px; 
+    border: solid var(--color-number6); 
+    border-width: 0 4px 4px 0; 
+    -webkit-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    transform: rotate(45deg); 
+  } 
+  .lover{
+    text-transform: lowercase;
+  }
+  @media screen and (max-width:1500px) {
+    .content-logon{
+        padding: 30px;
+    }
+  }
+  @media screen and (max-width:1440px) {
+    .content_page-img{
+        max-width: 400px;
+        width: 100%;
+        min-height: 400px;
+    }
+    .content-logon{
+        max-width: 660px;
+        width: 100%;
+        min-height: 544px;
+    }
+    .wrapper-login{
+        gap: 196px;
+    }
+    .content-form-text h1{
+font-size: 50px;
+font-weight: 700;
+line-height: 59px;
+letter-spacing: 0.18em;
+text-align: left;
+
+    }
+    .content-form{
+        gap: 9px;
+    }
+    .content-login-logon{
+        margin: 55px;
+    }
+    .content-form-type{
+        gap: 23px;
+    }
+    .wrapper-type input{
+        padding: 10px 6px;
+    }
+    .content-login-logon{
+        margin: 83px 54px;
+    }
+  }
+  @media screen and (max-width:1280px){
+    .wrapper-type input{
+        min-height: 50px;
+        font-size: 14px;
+        max-width: 400px;
+        width: 100%;
+    }
+    .content-form-text h1{
+        font-size: 32px;
+        text-align: center;
+    }
+    .wrapper-type span{
+        font-size: 16px;
+    }
+    .geekmark{
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .main,.content-sign span{
+        font-size: 12px !important;
+    }
+    .content-button .btn{
+        max-width: 400px;
+        width: 100%;
+        min-height: 44px;
+        font-size: 20px;
+    }
+    .wrapper-sign-on span{
+        font-size: 16px;
+        
+    }
+    .wrapper-sign-on {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-logon{
+        max-width: 520px;
+        width: 100%;
+        min-height: 451px;
+    }
+    .content-login-logon{
+        margin: 56px 0px;
+    }
+    .content-sign{
+        max-width: 400px;
+        width: 100%;
+    }
+    .wrapper-login{
+        gap: 257px;
+    }
+    .aboute-footer{
+        margin-top: 0px;
+    }
+  }
+  @media screen and (max-width:1058px){
+    .wrapper-login{
+        gap: 156px;
+    }
+  }
+  @media screen and (max-width:960px){
+    .wrapper-login{
+        gap: 48px;
+    }
+  }
+  @media screen and (max-width:850px){
+    .wrapper-login{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+  @media screen and (max-width:786px){
+    .aboute-footer{
+        margin-top: 0px !important;
+    }
+  }
+  @media screen and (max-width:460px){
+    .content_page-img{
+        max-width: 200px;
+        width: 100%;
+        min-height: 200px;
+    }
+    .content-logon{
+        border: unset;
+        box-shadow: none;
+        border-radius: unset;
+    }
+    .wrapper-login{
+        gap: 0;
+    }
+    .wrapper-type span{
+        font-size: 16px;
+    }
+    .main,.content-sign span{
+        font-size: 12px !important;
+    }
+    .main{
+        padding-left: 29px;
+    }
+    .content-login-logon{
+        padding-inline: 5px;
+    }
+  }
+  @media screen and (max-width:380px){
+    .main,.content-sign span{
+        font-size: 10px !important;
+    }
+    .content-login-logon{
+        padding-inline: 0px;
+    }
+    .geekmark{
+        width: 13px !important;
+        height: 13px !important;
+
+    }
+    .main .geekmark::after{
+        left: 3px;
+    bottom: 3px;
+    width: 2px;
+    height: 6px;
+    }
+    .main{
+        padding-left: 22px !important;
+    }
+  }
