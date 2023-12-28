@@ -1,0 +1,82 @@
+.content-aboute{
+    width: 100%;
+    margin-bottom: 100px;
+}
+.wrapper-aboute{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 15px;
+    max-width: 1518px;
+    width: 100%;
+    min-height: 473px;
+    margin: auto;
+}
+.aboute-text h1{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--color-number3);
+}
+
+.content-text-aboute{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 830px;
+    width: 100%;
+    min-height: 276px;
+}
+.content-text-aboute span:nth-child(1),
+.content-text-aboute span:nth-child(3){
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--color-number3);
+}
+.content-text-aboute span:nth-child(2){
+font-size: 24px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+color: var(--color-number2);
+}
+.content-logo-aboute{
+    max-width: 473px;
+    width: 100%;
+    min-height: 473px;
+    background-image: url(../image/aboute-logo.svg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.wrapper-aboute-logo{
+    display: flex;
+    align-items: center;
+    gap: 215px;
+}
+.flex-aboute{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+@media screen and (max-width:1440px) {
+    .aboute-text h1{
+        font-size: 30px;
+    }
+    .content-logo-aboute{
+        max-width: 400px;
+        width: 100%;
+        min-height: 335px;
+    }
+    .wrapper-aboute{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:1280px){
+    
+} 
