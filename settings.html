@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./image/logo/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="./indtex-style/index.css">
-    <link rel="stylesheet" href="./indtex-style/login.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="./indtex-style/settings.css">
+    <title>Settings</title>
 </head>
 <body>
     <header>
@@ -65,47 +65,52 @@
         </div>
     </header>
 
+
 <section>
-    <div class="content-login-logon">
-        <div class="wrapper-login">
-            <div class="content_page-img"></div>
-            <div class="content-logon">
-                <form action="" class="content-form">
-                    <div class="content-form-text">
-                        <h1>ՄՈՒՏՔ</h1>
+    <div class="content-settings">
+        <div class="settings-width">
+            <div class="settings-text">
+                <h1>Կարգավորումներ</h1>
+                <span>Փոփոխել տվյալները</span>
+                <img src="./image/PencilLine.svg" alt="image" class="lines">
+            </div>
+            <div class="settings-form">
+                <form action="" class="settings-content">
+                    <div class="form-flex">
+                        <div class="form-set">
+                            <span>Անուն</span>
+                            <input type="text" placeholder="Դավիթ ">
+                        </div>
+                        <div class="form-set">
+                            <span>Ազգանուն</span>
+                            <input type="text" placeholder="Դավթյան ">
+                        </div>
                     </div>
-                    <div class="content-form-type">
-                        <div class="wrapper-type">
+                    <div class="form-flex">
+                        <div class="form-set">
+                            <span>Հեռախոսահամար</span>
+                            <input type="number" placeholder="+374 33 33 33 33 ">
+                        </div>
+                        <div class="form-set">
                             <span>Էլ․ հասցե</span>
-                            <input type="text" placeholder="Էլ․ հասցե ">
-                        </div>
-                        <div class="wrapper-type">
-                            <span>Գաղտնաբառ</span>
-                            <input type="password" placeholder="********* ">
-                        </div>
-                        <div class="content-sign">
-                            <label class="main">Պահպանել մուտքը 
-                                <input type="checkbox"> 
-                                <span class="geekmark"></span> 
-                            </label> 
-                            <span id="chng">Մ<span class="lover">ՈՌԱՑԵ՞Լ ԵՔ ԳԱՂՏՆԱԲԱՌԸ</span></span>
-                        </div>
-                        <div class="content-button">
-                            <button class="btn">Մուտք</button>
-                        </div>
-                        <div class="wrapper-sign-on">
-                            <span>Դեռ գրանցվա՞ծ չեք։ <span>Գրանցվել։</span></span>
+                            <input type="email" placeholder="Davtyan@gmail.com ">
                         </div>
                     </div>
                 </form>
+            </div>
+            <div class="content-change-settings">
+                <span>Փոխել գաղտնաբառը</span>
+                <span>Ջնջել էջը</span>
             </div>
         </div>
     </div>
 </section>
 
 
+
+
     <footer>
-        <div class="content-footer aboute-footer">
+        <div class="content-footer settings-footer">
             <div class="container-menu-footer">
                 <div class="content-oneway-logo">
                     <img src="./image/footer-logo.svg" alt="OneWay">
@@ -212,6 +217,5 @@
             </div>
         </div>
     </footer>
-    <script src="./script-js/login.js"></script>
 </body>
 </html>
