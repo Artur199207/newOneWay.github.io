@@ -106,12 +106,40 @@ cursor: pointer;
 .lines{
     display: none;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.content-settings-button{
+    display: flex;
+    justify-content: flex-end;
+    padding-inline: 10px;
+    cursor: pointer;
+}
+.content-settings-button .btn-set{
+max-width: 272px;
+width: 100%;
+min-height: 44px;
+border: none;
+background: var(--color-number2);
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: center;
+color: var(--color-number6);
+border-radius: 4px;
+}
 @media screen and (max-width:1440px) {
     .settings-text h1{
         font-size: 30px;
     }
     .settings-width{
      padding-inline: 30px;
+    }
+    .content-settings-button{
+        padding-top: 50px;
     }
 }
 @media screen and (max-width:1280px){
@@ -177,6 +205,13 @@ cursor: pointer;
 }
 .content-change-settings{
     padding-top: 34px;
+}
+.content-settings-button {
+    justify-content: center;
+}
+.content-settings-button .btn-set{
+    max-width: 400px;
+    width: 100%;
 }
 }
 @media screen and (max-width:360px){
