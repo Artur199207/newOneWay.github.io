@@ -1,0 +1,137 @@
+.pass-change {
+    width: 100%;
+    margin: 100px auto;
+}
+
+.wrapper-pass {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 808px;
+    width: 100%;
+    min-height: 488px;
+    margin: auto;
+    box-shadow: 0px 4px 32px 0px var(--color-number10);
+    border: 1px solid var(--color-number13);
+    border-radius: 4px;
+    padding: 60px;
+}
+
+.pass-name h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.18em;
+    text-align: left;
+    color: var(--color-number2);
+}
+
+.change-pass-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-type-hub {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.content-type-hub span {
+    font-family: Mardoto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--color-number3);
+}
+
+.content-type-hub input {
+    max-width: 688px;
+    width: 100%;
+    min-height: 70px;
+    border: 1px solid var(--color-number2);
+    border-radius: 4px;
+    padding: 21px 10px;
+}
+.content-type-hub input:focus-visible{
+    outline: none;
+    border: solid 1px var(--color-number7);
+}
+
+.pass-change-button .pass-btn {
+    max-width: 263px;
+    width: 100%;
+    min-height: 44px;
+    border-radius: 4px;
+    background-color: var(--color-number2);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--color-number6);
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width:1440px) {
+    .wrapper-pass{
+        max-width: 660px;
+        width: 100%;
+        min-height: 428px;
+    }
+    .change-pass-form input{
+        max-width: 600px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:1280px){
+    .wrapper-pass{
+        max-width: 520px;
+        width: 100%;
+        min-height: 364px;
+    }
+    .pass-name h1{
+        text-align: center;
+    }
+    .content-type-hub span{
+        font-size: 16px;
+    }
+    .content-type-hub input{
+        max-width: 400px;
+        width: 100%;
+        min-height: unset;
+        height: 50px;
+    }
+    .pass-change-button .pass-btn{
+        max-width: 400px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:786px){
+    .pass-cng-footer{
+        margin-top: -27px !important;
+    }
+    .wrapper-pass{
+        max-width: 530px;
+        width: 100%;
+        min-height: 371px;
+    }
+    .pass-name h1{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:560px){
+    .wrapper-pass{
+        border: none;
+        box-shadow: unset;
+        padding: 20px;
+    }
+    .pass-change{
+        margin: 40px 0;
+    }
+}
