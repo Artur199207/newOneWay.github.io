@@ -39,16 +39,17 @@
             <div class="wrapper-navbar">
                 <ul class="nav_menu">
                     <li>
-                        <a href="#">Մեր մասին</a>
+                        <a href="./aboute.html">Մեր մասին</a>
                     </li>
                     <li>
                         <a href="#">Ծառայություններ</a>
                     </li>
                     <li>
-                        <button>Հաշվիչ</button>
+                        <button onclick="openOverlay()">Հաշվիչ</button>
                     </li>
                 </ul>
             </div>
+
             <div class="wrapper-contact">
                 <img src="./image/Vector.svg" alt="OneWay">
                 <span>+374 33 79 88 88</span>
@@ -65,10 +66,72 @@
                 </ul>
             </div>
         </div>
+
     </header>
 
 
-
+    <section>
+        <div class="overlay" id="overlay">
+            <div class="content-aboute1">
+                <div class="content-calculation">
+                    <div class="calculation-text">
+                        <h1>Առաքման հաշվիչ</h1>
+                            <img src="./image/X.svg" alt="OneWay"  onclick="closeOverlay()">
+                    </div>
+                    <div class="content-checkbox">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="checkbox1">
+                            <label class="checkbox-label" for="checkbox1">
+                              <div class="custom-checkbox">
+                                <img src="./image/china.svg" alt="OneWay">
+                              </div>
+                            </label>
+                          </div>
+                          <div class="checkbox-container">
+                            <input type="checkbox" id="checkbox2">
+                            <label class="checkbox-label" for="checkbox2">
+                              <div class="custom-checkbox">
+                                <img src="./image/usa.svg" alt="OneWay">
+                              </div>
+                            </label>
+                          </div>
+                          <div class="checkbox-container">
+                            <input type="checkbox" id="checkbox3">
+                            <label class="checkbox-label" for="checkbox3">
+                              <div class="custom-checkbox">
+                                <img src="./image/rus.svg" alt="OneWay">
+                              </div>
+                            </label>
+                          </div>
+                          <div class="checkbox-container">
+                            <input type="checkbox" id="checkbox4">
+                            <label class="checkbox-label" for="checkbox4">
+                              <div class="custom-checkbox">
+                                <img src="./image/arab.svg" alt="Oneway">
+                              </div>
+                            </label>
+                          </div>
+                    </div>
+                </div>
+                <div class="content-aboute-line"></div>
+                <div class="content-aboute-form">
+                    <form action="" class="aboute-content">
+                        <div class="aboute-type">
+                            <input type="number" placeholder="Փաստացի քաշ">
+                        </div>
+                        <div class="aboute-type">
+                            <input type="number" placeholder="Կգ">
+                        </div>
+                    </form>
+                </div>
+                <div class="content-aboute-line"></div>
+                <div class="container-calculatin-aboute">
+                    <span>Առաքման արժեք</span>
+                    <label for="">---- դրամ</label>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <section>
@@ -79,13 +142,16 @@
                         <div class="aboute-text">
                             <h1>Մեր Մասին</h1>
                         </div>
+                        <div class="content-logistics"></div>
                         <div class="content-text-aboute">
                             <span>Մենք բեռնափոխադրումներ իրականացնող ընկերություն ենք:Կատարում ենք բեռնափոխադրումներ
                                 Չինաստանից
-                                (օդային) և Ռուսաստանից (ցամաքային):Չունենք մինիմալ կամ մաքսիմալ քաշ, հաշվարկում ենք ոչ թե
+                                (օդային) և Ռուսաստանից (ցամաքային):Չունենք մինիմալ կամ մաքսիմալ քաշ, հաշվարկում ենք ոչ
+                                թե
                                 ծավալով, այլ կիլոգրամներով։</span>
                             <span>Որքա՞ն ժամանակում է պատվերը հասնում Հայաստան:</span>
-                            <span>Չինաստանից բեռը հասնում է 25 աշխատանքային օրում: 1 կգ-ի արժեքը` 5000 դրամ:Ռուսաստանից բեռը
+                            <span>Չինաստանից բեռը հասնում է 25 աշխատանքային օրում: 1 կգ-ի արժեքը` 5000 դրամ:Ռուսաստանից
+                                բեռը
                                 հասնում է 8-10 աշխատանքային օրում: 1 կգ-ի արժեքը` 1000 դրամ:</span>
                         </div>
                     </div>
@@ -114,13 +180,13 @@
                 <div class="content-footer-hub">
                     <ul class="content-menu_footer">
                         <li>
-                            <a href="">Մեր մասին</a>
+                            <a href="./aboute.html">Մեր մասին</a>
                         </li>
                         <li>
                             <a href="">Ծառայություններ</a>
                         </li>
                         <li>
-                            <button>Հաշվիչ</button>
+                            <button onclick="openOverlay()">Հաշվիչ</button>
                         </li>
                     </ul>
                     <ul class="footer-menu2">
@@ -213,6 +279,7 @@
             </div>
         </div>
     </footer>
+    <script src="./script-js/aboute.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="./image/logo/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="./indtex-style/index.css">
     <link rel="stylesheet" href="./indtex-style/passchaange.css">
+    <link rel="stylesheet" href="./indtex-style/aboute.css">
     <title>PassChange</title>
 </head>
 <body>
@@ -37,13 +38,13 @@
             <div class="wrapper-navbar">
                 <ul class="nav_menu">
                     <li>
-                        <a href="#">Մեր մասին</a>
+                        <a href="./aboute.html">Մեր մասին</a>
                     </li>
                     <li>
                         <a href="#">Ծառայություններ</a>
                     </li>
                     <li>
-                        <button>Հաշվիչ</button>
+                        <button onclick="openOverlay()">Հաշվիչ</button>
                     </li>
                 </ul>
             </div>
@@ -64,6 +65,68 @@
             </div>
         </div>
     </header>
+    <section>
+        <div class="overlay" id="overlay">
+            <div class="content-aboute1">
+                <div class="content-calculation">
+                    <div class="calculation-text">
+                        <h1>Առաքման հաշվիչ</h1>
+                            <img src="./image/X.svg" alt="OneWay"  onclick="closeOverlay()">
+                    </div>
+                    <div class="content-checkbox">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="checkbox1">
+                            <label class="checkbox-label" for="checkbox1">
+                              <div class="custom-checkbox">
+                                <img src="./image/china.svg" alt="OneWay">
+                              </div>
+                            </label>
+                          </div>
+                          <div class="checkbox-container">
+                            <input type="checkbox" id="checkbox2">
+                            <label class="checkbox-label" for="checkbox2">
+                              <div class="custom-checkbox">
+                                <img src="./image/usa.svg" alt="OneWay">
+                              </div>
+                            </label>
+                          </div>
+                          <div class="checkbox-container">
+                            <input type="checkbox" id="checkbox3">
+                            <label class="checkbox-label" for="checkbox3">
+                              <div class="custom-checkbox">
+                                <img src="./image/rus.svg" alt="OneWay">
+                              </div>
+                            </label>
+                          </div>
+                          <div class="checkbox-container">
+                            <input type="checkbox" id="checkbox4">
+                            <label class="checkbox-label" for="checkbox4">
+                              <div class="custom-checkbox">
+                                <img src="./image/arab.svg" alt="Oneway">
+                              </div>
+                            </label>
+                          </div>
+                    </div>
+                </div>
+                <div class="content-aboute-line"></div>
+                <div class="content-aboute-form">
+                    <form action="" class="aboute-content">
+                        <div class="aboute-type">
+                            <input type="number" placeholder="Փաստացի քաշ">
+                        </div>
+                        <div class="aboute-type">
+                            <input type="number" placeholder="Կգ">
+                        </div>
+                    </form>
+                </div>
+                <div class="content-aboute-line"></div>
+                <div class="container-calculatin-aboute">
+                    <span>Առաքման արժեք</span>
+                    <label for="">---- դրամ</label>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 <section>
@@ -105,13 +168,13 @@
                 <div class="content-footer-hub">
                     <ul class="content-menu_footer">
                         <li>
-                            <a href="">Մեր մասին</a>
+                            <a href="./aboute.html">Մեր մասին</a>
                         </li>
                         <li>
                             <a href="">Ծառայություններ</a>
                         </li>
                         <li>
-                            <button>Հաշվիչ</button>
+                            <button onclick="openOverlay()">Հաշվիչ</button>
                         </li>
                     </ul>
                     <ul class="footer-menu2">
@@ -204,5 +267,6 @@
             </div>
         </div>
     </footer>
+    <script src="./script-js/aboute.js"></script>
 </body>
 </html>
