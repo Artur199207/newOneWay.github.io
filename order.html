@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./indtex-style/order.css">
     <title>Order</title>
 </head>
+
 <body>
     <header>
         <div class="container-navigation">
@@ -71,56 +73,106 @@
 
 
 
-<section>
-    <div class="content-order">
-        <div class="cont-order">
-            <div class="order-start">
-                <h1>Իմ Պատվերները</h1>
-                <button id="order-btn" onclick="openPopup1()" >Ավելացնել պատվեր</button>
-            </div>
-            <div class="order-type">
-                <div class="order-text">
-                    <span>Վճարման ենթակա գումար <span>0 դրամ</span></span>
-                    <span>Ապրանքի քաշը <span>0 կգ</span></span>
+    <section>
+        <div class="content-order">
+            <div class="cont-order">
+                <div class="order-start">
+                    <h1>Իմ Պատվերները</h1>
+                    <button id="order-btn" onclick="openPopup1()">Ավելացնել պատվեր</button>
                 </div>
-                <div class="order-input">
-                    <input type="text" placeholder="Ապրանքի կոդը կամ անունը">
-                    <img src="./image/search.svg" alt="OneWay">
+                <div class="order-type">
+                    <div class="order-text">
+                        <span>Վճարման ենթակա գումար <span>0 դրամ</span></span>
+                        <span>Ապրանքի քաշը <span>0 կգ</span></span>
+                    </div>
+                    <div class="order-input">
+                        <input type="text" placeholder="Ապրանքի կոդը կամ անունը">
+                        <img src="./image/search.svg" alt="OneWay">
+                    </div>
+                </div>
+                <div class="order-bording">
+                    <button onclick="changeColor(this)">Պատվիրված է <span>(3)</span></button>
+                    <button onclick="changeColor(this)">Հասել է պահեստ <span>(0)</span></button>
+                    <button onclick="changeColor(this)">Ճանապարհին է <span>(0)</span></button>
+                    <button onclick="changeColor(this)">Հայաստանում է <span>(0)</span></button>
+                    <button onclick="changeColor(this)">Ընդունված է <span>(0)</span></button>
+                </div>
+                <div class="order-background"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section>
+        <div class="overlay" id="overlay">
+            <div class="popup-content">
+                <div class="content-open-div">
+                    <h1>Ավելացնել պատվերի տվյալները</h1>
+                    <img src="./image/X.svg" alt="OneWay" onclick="closePopup()">
+                </div>
+                <div class="content-checkbox">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox1">
+                        <label class="checkbox-label" for="checkbox1">
+                            <div class="custom-checkbox">
+                                <img src="./image/china.svg" alt="OneWay" >
+                            </div>
+                        </label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox2">
+                        <label class="checkbox-label" for="checkbox2">
+                            <div class="custom-checkbox">
+                                <img src="./image/usa.svg" alt="OneWay">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox3">
+                        <label class="checkbox-label" for="checkbox3">
+                            <div class="custom-checkbox">
+                                <img src="./image/rus.svg" alt="OneWay">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox4">
+                        <label class="checkbox-label" for="checkbox4">
+                            <div class="custom-checkbox">
+                                <img src="./image/arab.svg" alt="Oneway">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="wrapper-order-form">
+                    <form action="" class="order-form">
+                        <div class="wrapper-order12">
+                            <span>Ստացող</span>
+                            <input type="text" id="infoInput" placeholder="Դավիթ  Դավթյան ID1234567">
+                        </div>
+                        <div class="wrapper-order12">
+                            <span>Tracking number</span>
+                            <input type="number" id="infoInput1" placeholder="Խնդրում ենք մուտքագրել առանց նշանների">
+                        </div>
+                    </form>
+                </div>
+                <div class="wrapper-btn-order">
+                    <button onclick="addToPage()" class="btn-id1">Ավելացնել</button>
+                    <button onclick="closePopup()" class="btn-id2">Փակել</button>
                 </div>
             </div>
-            <div class="order-bording">
-                <button onclick="changeColor(this)">Պատվիրված է <span>(3)</span></button>
-                <button onclick="changeColor(this)">Հասել է պահեստ <span>(0)</span></button>
-                <button onclick="changeColor(this)">Ճանապարհին է <span>(0)</span></button>
-                <button onclick="changeColor(this)">Հայաստանում է <span>(0)</span></button>
-                <button onclick="changeColor(this)">Ընդունված է <span>(0)</span></button>
-            </div>
-            <div class="order-background"></div>
         </div>
-    </div>
-</section>
 
-
-
-
-<section>
-    <div class="overlay" id="overlay">
-        <div class="popup-content">
-          <h2>Enter Information</h2>
-          <input type="text" id="infoInput" placeholder="Enter info">
-          <button onclick="addToPage()">Add to Page</button>
-          <button onclick="closePopup()">Close</button>
-        </div>
-      </div>
-    
-      <div id="infoContainer"></div>
-</section>
+        <div id="infoContainer"></div>
+    </section>
 
 
 
 
 
-    
+
     <footer>
         <div class="content-footer aboute-footer">
             <div class="container-menu-footer">
@@ -209,7 +261,6 @@
                                     <div class="flex-wrap">
                                         <img src="./image/instagram.svg" alt="OneWay">
                                         <img src="./image/facebook.svg" alt="OneWay">
-
                                     </div>
 
                                 </div>
@@ -231,4 +282,5 @@
     </footer>
     <script src="./script-js/order.js"></script>
 </body>
+
 </html>
