@@ -94,7 +94,7 @@
                     <button onclick="changeColor(this)">Պատվիրված է <span>(3)</span></button>
                     <button onclick="changeColor(this)">Հասել է պահեստ <span>(0)</span></button>
                     <button onclick="changeColor(this)">Ճանապարհին է <span>(0)</span></button>
-                    <button onclick="changeColor(this)">Հայաստանում է <span>(0)</span></button>
+                    <button onclick="changeColor(this)" id="order-to">Հայաստանում է <span>(0)</span></button>
                     <button onclick="changeColor(this)">Ընդունված է <span>(0)</span></button>
                 </div>
                 <div class="order-background"></div>
@@ -165,7 +165,30 @@
             </div>
         </div>
 
-        <div id="infoContainer"></div>
+        <div id="infoContainer">
+            <div class="infocontentleft"></div>
+            <div class="infocontentrigth">
+
+                <div class="content-payment">
+                    <div class="payment-text">
+                        <h1>Վճարման եղանակը</h1>
+                    </div>
+                    <div class="payment-visa">
+                        <img src="./image/payment/visa.svg" alt="OneWay">
+                        <img src="./image/payment/arca.svg" alt="OneWay">
+                        <img src="./image/payment/arca1.svg" alt="OneWay">
+                        <img src="./image/payment/idram.svg" alt="OneWay">
+                        <img src="./image/payment/tellsel.svg" alt="OneWay">
+                    </div>
+                    <div class="payment-button">
+                        <button>Գնալ վճարման էջ</button>
+                    </div>
+                    <div class="payment-order">
+                        <span>Վճարել <span>450.000 դրամ</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
