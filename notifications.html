@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./image/logo/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="./indtex-style/index.css">
-    <link rel="stylesheet" href="./indtex-style/order.css">
-    <title>Order</title>
+    <link rel="stylesheet" href="./indtex-style/notifications.css">
+    <title>Notifications</title>
 </head>
-
 <body>
     <header>
         <div class="container-navigation">
@@ -70,134 +68,132 @@
     </header>
 
 
-
-
-
-    <section>
-        <div class="content-order">
-            <div class="cont-order">
-                <div class="order-start">
-                    <h1>Իմ Պատվերները</h1>
-                    <button id="order-btn" onclick="openPopup1()">Ավելացնել պատվեր</button>
+<section>
+    <div class="content-notification">
+        <div class="notification-wrapp">
+            <div class="notification-text">
+                <h1>ծանուցումներ</h1>
+            </div>
+            <div class="content-notification-old">
+                <div class="notification-day">
+                    <span>Այսօր</span>
+                    <button>Մաքրել Բոլորը</button>
                 </div>
-                <div class="order-type">
+                <div class="notification-block color-change">
                     <div class="order-text">
-                        <span>Վճարման ենթակա գումար <span>0 դրամ</span></span>
-                        <span>Ապրանքի քաշը <span>0 կգ</span></span>
+                        <span> <span>6587452148982</span> Առաքանին հասել է Չինաստանի պահեստ:</span>
                     </div>
-                    <div class="order-input">
-                        <input type="text" placeholder="Ապրանքի կոդը կամ անունը">
-                        <img src="./image/search.svg" alt="OneWay">
-                    </div>
-                </div>
-                <div class="order-bording">
-                    <button onclick="changeColor(this)">Պատվիրված է <span>(3)</span></button>
-                    <button onclick="changeColor(this)">Հասել է պահեստ <span>(0)</span></button>
-                    <button onclick="changeColor(this)">Ճանապարհին է <span>(0)</span></button>
-                    <button onclick="changeColor(this)" id="order-to">Հայաստանում է <span>(0)</span></button>
-                    <button onclick="changeColor(this)">Ընդունված է <span>(0)</span></button>
-                </div>
-                <div class="order-background"></div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <section>
-        <div class="overlay" id="overlay">
-            <div class="popup-content">
-                <div class="content-open-div">
-                    <h1>Ավելացնել պատվերի տվյալները</h1>
-                    <img src="./image/X.svg" alt="OneWay" onclick="closePopup()">
-                </div>
-                <div class="content-checkbox">
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="checkbox1">
-                        <label class="checkbox-label" for="checkbox1">
-                            <div class="custom-checkbox">
-                                <img src="./image/china.svg" alt="OneWay" >
-                            </div>
-                        </label>
-                    </div>
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="checkbox2">
-                        <label class="checkbox-label" for="checkbox2">
-                            <div class="custom-checkbox">
-                                <img src="./image/usa.svg" alt="OneWay">
-                            </div>
-                        </label>
-                    </div>
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="checkbox3">
-                        <label class="checkbox-label" for="checkbox3">
-                            <div class="custom-checkbox">
-                                <img src="./image/rus.svg" alt="OneWay">
-                            </div>
-                        </label>
-                    </div>
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="checkbox4">
-                        <label class="checkbox-label" for="checkbox4">
-                            <div class="custom-checkbox">
-                                <img src="./image/arab.svg" alt="Oneway">
-                            </div>
-                        </label>
+                    <div class="content-icon">
+                        <img src="./image/payment/x.svg" alt="OneWay">
+                        <span>21։20</span>
                     </div>
                 </div>
-                <div class="wrapper-order-form">
-                    <form action="" class="order-form">
-                        <div class="wrapper-order12">
-                            <span>Ստացող</span>
-                            <input type="text" id="infoInput" placeholder="Դավիթ  Դավթյան ID1234567">
-                        </div>
-                        <div class="wrapper-order12">
-                            <span>Tracking number</span>
-                            <input type="number" id="infoInput1" placeholder="Խնդրում ենք մուտքագրել առանց նշանների">
-                        </div>
-                    </form>
+                <div class="notification-block">
+                    <div class="order-text">
+                        <span> <span>6587452148982</span> Առաքանին հասել է ՀՀ։</span>
+                    </div>
+                    <div class="content-icon">
+                        <img src="./image/payment/x.svg" alt="OneWay">
+                        <span>21։20</span>
+                    </div>
                 </div>
-                <div class="wrapper-btn-order">
-                    <button onclick="addToPage()" class="btn-id1">Ավելացնել</button>
-                    <button onclick="closePopup()" class="btn-id2">Փակել</button>
+                <div class="notification-day">
+                    <span>15.01.2024</span>
                 </div>
-            </div>
-        </div>
-
-        <div id="infoContainer">
-            <div class="infocontentleft"></div>
-            <div class="infocontentrigth">
-
-                <div class="content-payment">
-                    <div class="payment-text">
-                        <h1>Վճարման եղանակը</h1>
+                <div class="notification-block">
+                    <div class="order-text">
+                        <span> <span>6587452148982</span>Առաքանին պատրաստ է ստացման։</span>
                     </div>
-                    <div class="payment-visa">
-                        <img src="./image/payment/visa.svg" alt="OneWay">
-                        <img src="./image/payment/arca.svg" alt="OneWay">
-                        <img src="./image/payment/arca1.svg" alt="OneWay">
-                        <img src="./image/payment/idram.svg" alt="OneWay">
-                        <img src="./image/payment/tellsel.svg" alt="OneWay">
+                    <div class="content-icon">
+                        <img src="./image/payment/x.svg" alt="OneWay">
+                        <span>21։20</span>
                     </div>
-                    <div class="payment-button">
-                        <button>Գնալ վճարման էջ</button>
+                </div>
+                <div class="notification-block">
+                    <div class="order-text">
+                        <span> Հարգելի հաճախորդ,<span>6587452148982</span> Առաքանին ուշանում է։ հայցում ենք Ձեր ներողամտությունը պատճառված անհարմարությունների համար:
+                    </span>
                     </div>
-                    <div class="payment-order">
-                        <span>Վճարել <span>450.000 դրամ</span></span>
+                    <div class="content-icon">
+                        <img src="./image/payment/x.svg" alt="OneWay">
+                        <span>21։20</span>
+                    </div>
+                </div>
+                <div class="notification-block">
+                    <div class="order-text">
+                        <span><span>6587452148982</span>Առաքանին պատրաստ է ստացման։ </span>
+                    </span>
+                    </div>
+                    <div class="content-icon">
+                        <img src="./image/payment/x.svg" alt="OneWay">
+                        <span>21։20</span>
+                    </div>
+                </div>
+                <div class="notification-block">
+                    <div class="order-text">
+                        <span>Հարգելի հաճախորդ,<span>6587452148982</span> Առաքանին ուշանում է։ հայցում ենք Ձեր ներողամտությունը պատճառված անհարմարությունների համար:
+                    </span>
+                    </span>
+                    </div>
+                    <div class="content-icon">
+                        <img src="./image/payment/x.svg" alt="OneWay">
+                        <span>21։20</span>
+                    </div>
+                </div>
+                <div class="notification-day">
+                    <span>14.01.2024</span>
+                </div>
+                <div class="notification-block">
+                    <div class="order-text">
+                        <span><span>6587452148982</span>Առաքանին պատրաստ է ստացման։</span>
+                    </span>
+                    </div>
+                    <div class="content-icon">
+                        <img src="./image/payment/x.svg" alt="OneWay">
+                        <span>21։20</span>
+                    </div>
+                </div>
+                <div class="notification-block">
+                    <div class="order-text">
+                        <span> Հարգելի հաճախորդ,<span>6587452148982</span> Առաքանին ուշանում է։ հայցում ենք Ձեր ներողամտությունը պատճառված անհարմարությունների համար:
+                    </span>
+                    </div>
+                    <div class="content-icon">
+                        <img src="./image/payment/x.svg" alt="OneWay">
+                        <span>21։20</span>
+                    </div>
+                </div>
+                <div class="notification-block">
+                    <div class="order-text">
+                        <span><span>6587452148982</span>Առաքանին պատրաստ է ստացման։ </span>
+                    </span>
+                    </div>
+                    <div class="content-icon">
+                        <img src="./image/payment/x.svg" alt="OneWay">
+                        <span>21։20</span>
+                    </div>
+                </div>
+                <div class="notification-block">
+                    <div class="order-text">
+                        <span>Հարգելի հաճախորդ,<span>6587452148982</span> Առաքանին ուշանում է։ հայցում ենք Ձեր ներողամտությունը պատճառված անհարմարությունների համար:
+                    </span>
+                    </span>
+                    </div>
+                    <div class="content-icon">
+                        <img src="./image/payment/x.svg" alt="OneWay">
+                        <span>21։20</span>
                     </div>
                 </div>
             </div>
+           
         </div>
-    </section>
+    </div>
+</section>
 
 
-
-
-
-
+    
     <footer>
-        <div class="content-footer order-footer">
+        <div class="content-footer aboute-footer">
             <div class="container-menu-footer">
                 <div class="content-oneway-logo">
                     <img src="./image/footer-logo.svg" alt="OneWay">
@@ -260,7 +256,7 @@
                         </div>
                     </div>
 
-                    <div class="content-payment order-payment">
+                    <div class="content-payment">
 
                         <div class="paymant-image">
 
@@ -284,6 +280,7 @@
                                     <div class="flex-wrap">
                                         <img src="./image/instagram.svg" alt="OneWay">
                                         <img src="./image/facebook.svg" alt="OneWay">
+
                                     </div>
 
                                 </div>
@@ -291,8 +288,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
             <div class="class-logistick">
                 <div class="content-oneway-logo media-none">
@@ -303,7 +298,6 @@
             </div>
         </div>
     </footer>
-    <script src="./script-js/order.js"></script>
+    <script src="./script-js/aboute.js"></script>
 </body>
-
 </html>

@@ -51,7 +51,7 @@ function addToPage() {
   div2.appendChild(div5);
   div5.append(chck);
   const air = document.createElement('img');
-  air.src = '../image/AirplaneTilt.svg';
+  air.src = './image/AirplaneTilt.svg';
   div5.append(air);
   const div6 = document.createElement('div');
   const text = document.createElement('h1');
@@ -74,10 +74,7 @@ function addToPage() {
 
 const toOrder = document.getElementById('order-to');
 toOrder.addEventListener('click',function(){
-  // const order = document.createElement('div');
-  // order.setAttribute('class','con-order')
   document.querySelector(".infocontentrigth").style.display = 'block'
-  // document.querySelector(".infocontentrigth").appendChild(order);
   document.querySelector('.order-background').style.display = 'none';
 })
 

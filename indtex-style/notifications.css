@@ -1,0 +1,144 @@
+.content-notification {
+    width: 100%;
+    padding-inline: 120px;
+    margin-top: 108px;
+}
+
+.notification-wrapp {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+}
+
+.notification-text h1 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--color-number3);
+    text-transform: uppercase;
+}
+
+.content-notification-old {
+    display: flex;
+    flex-direction: column;
+    margin-top: 39px;
+    gap: 17px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.notification-day {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification-day span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--color-number23);
+}
+
+.notification-day button {
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--color-number24);
+    text-decoration: underline;
+    background-color: unset;
+    cursor: pointer;
+}
+
+.notification-block {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    min-height: 92px;
+    border-radius: 4px;
+    border: 1px solid var(--color-number26);
+    align-items: center;
+    padding-inline: 10px;
+}
+
+.color-change {
+    border: 1px solid var(--color-number2);
+}
+
+.order-text span>span {
+    color: var(--color-number2);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.order-text span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--color-number9);
+}
+
+.content-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+}
+
+.content-icon span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--color-number25);
+}
+
+@media screen and (max-width:1440px) {
+    .notification-text h1 {
+        font-size: 30px;
+    }
+    .content-notification{
+        padding-inline: 30px;
+    }
+    .aboute-footer{
+        margin-top: 0 !important;
+    }
+}
+@media screen and (max-width:1280px){
+    .notification-text h1 {
+        font-size: 24px;
+    }
+} 
+@media screen and (max-width:786px){
+    .order-text span,.order-text span>span{
+        font-size: 14px;
+    }
+    .order-text{
+        padding-inline: 5px;
+    }
+}
+@media screen and (max-width:393px){
+    .content-notification{
+        margin-top: 42px;
+    }
+    .notification-day span{
+        font-size: 14px;
+    }
+    .order-text span,.order-text span>span{
+        font-size: 12px;
+    }
+}
