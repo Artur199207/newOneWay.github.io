@@ -482,6 +482,7 @@ input[type="checkbox"]:checked+.checkbox-label .custom-checkbox {
     justify-content: center;
     align-items: center;
 }
+
 @media screen and (max-width:1440px) {
     .cont-order{
         margin-top: 60px;
