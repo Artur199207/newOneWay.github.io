@@ -8,7 +8,7 @@
     flex-direction: column;
     gap: 30px;
     min-height: 637px;
-    margin: 100px 0  100px;
+    margin: 100px 0 100px;
     padding-left: 60px;
 }
 
@@ -98,12 +98,14 @@
     display: flex;
     justify-content: space-between;
 }
-.content-colum{
+
+.content-colum {
     max-width: 518px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+
 .name-addresses h1 {
     font-size: 24px;
     font-weight: 700;
@@ -123,100 +125,121 @@
     letter-spacing: 0em;
     text-align: left;
 }
-.content-copy{
+
+.content-copy {
     display: flex;
     justify-content: flex-end;
     margin-inline: 60px;
     gap: 10px;
 }
-.content-copy span{
-font-size: 24px;
-font-weight: 400;
-line-height: 28px;
-letter-spacing: 0em;
-text-align: left;
-color: var(--color-number19);
+
+.content-copy span {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--color-number19);
 }
+
 @media screen and (max-width:1440px) {
-    .wrapper-addess{
+    .wrapper-addess {
         padding-inline: 30px;
         margin: 60px 0 60px;
     }
-    .addresses-footer{
+
+    .addresses-footer {
         margin-top: 0 !important;
     }
-    .content-dev1 h1{
+
+    .content-dev1 h1 {
         font-size: 30px;
     }
 }
-@media screen and (max-width:1280px){
+
+@media screen and (max-width:1280px) {
+
     .content-button1 button:nth-child(1),
     .content-button1 button:nth-child(2),
-    .content-button1{
+    .content-button1 {
         max-width: 298px;
         width: 100%;
     }
-    .content-dev1 h1{
+
+    .content-dev1 h1 {
         font-size: 24px;
     }
-    
+
 }
-@media screen and (max-width:1100px){
-    .content-colum{
+
+@media screen and (max-width:1100px) {
+    .content-colum {
         flex-direction: column;
         gap: 5px;
     }
-    .name-addresses{
+
+    .name-addresses {
         border-bottom: 1px solid var(--color-number17);
     }
+
     .content-button1 button:nth-child(1),
-    .content-button1 button:nth-child(2),.content-button1{
+    .content-button1 button:nth-child(2),
+    .content-button1 {
         max-width: 172px;
         width: 100%;
         min-height: 38px;
+        padding: 0px 15px;
+        font-size: 14px;
     }
-    /* .content-order-addresses{
-        max-width: 534px;
-        width: 100%;
-        min-height: 427px;
-    } */
-    .content-colum h1,.content-colum span{
+
+    .content-colum h1,
+    .content-colum span {
         font-size: 16px;
     }
-    .name-addresses img, .content-copy img{
+
+    .name-addresses img,
+    .content-copy img {
         width: 24px;
     }
-    .content-copy span{
+
+    .content-copy span {
         font-size: 20px;
     }
-    .content-copy{
+
+    .content-copy {
         margin-bottom: 41px;
     }
 }
-@media screen and (max-width:786px){
-.content-footer.addresses-footer{
-    margin-top: 0px !important;
+
+@media screen and (max-width:786px) {
+    .content-footer.addresses-footer {
+        margin-top: 0px !important;
+    }
 }
-}
-@media screen and (max-width:720px){
-    .content-dev2{
+
+@media screen and (max-width:720px) {
+    .content-dev2 {
         flex-direction: column;
         align-items: center;
     }
-    .content-button1{
+
+    .content-button1 {
         flex-direction: row-reverse;
         justify-content: center;
     }
 }
-@media screen and (max-width:500px){
-    .content-top{
+
+@media screen and (max-width:500px) {
+    .content-top {
         margin: unset;
     }
-    .content-copy{
+
+    .content-copy {
         margin-top: 30px;
         margin-inline: 0;
     }
-    .content-order-addresses{
+
+    .content-order-addresses {
         border: none;
         box-shadow: unset;
     }
