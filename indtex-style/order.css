@@ -483,6 +483,66 @@ input[type="checkbox"]:checked+.checkbox-label .custom-checkbox {
     align-items: center;
 }
 
+
+
+
+
+#order-btn {
+    border: none;
+
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #order-btn:hover {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    outline: 1px solid var(--color-number2);
+    -webkit-box-shadow: 4px 5px 17px -4px var(--color-number2);
+            box-shadow: 4px 5px 17px -4px var(--color-number2);
+  }
+  
+  #order-btn::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-number8);
+
+    -webkit-transform: skewX(30deg);
+        -ms-transform: skewX(30deg);
+            transform: skewX(30deg);
+    z-index: -1;
+    -webkit-transition: width 1000ms;
+    transition: width 1000ms;
+  }
+  #order-btn:hover::before {
+    width: 150%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:1440px) {
     .cont-order{
         margin-top: 60px;

@@ -32,6 +32,7 @@
     --color-number24: #828282;
     --color-number25: #6F7B91;
     --color-number26: #C7C7C7;
+    --color-number27:#E58B06;
 }
 
 @font-face {
@@ -47,7 +48,20 @@ body {
 a {
     text-decoration: unset;
 }
-
+.wave{
+    position: relative;
+    -webkit-box-reflect: below -20px
+    liner-gradient(transparent,rgba(255,251,251,0.363));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../image/logo/Gif\ GifONE.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10% 20%;
+    
+  }
 .content-burger {
     display: none;
 }
@@ -190,10 +204,15 @@ a {
 .wrap-login li:hover a,
 .content-menu_footer li a:hover,
 .content-menu_footer li button:hover,
-.footer-menu2 li a:hover {
+.footer-menu2 li a:hover{
     transition: .3s;
     cursor: pointer;
     color: var(--color-number2);
+}
+.wrapper-sign-on span>span:hover{
+    transition: .5s;
+    color: var(--color-number2);
+    cursor: pointer;
 }
 
 .wrapper-contact {
@@ -2129,8 +2148,8 @@ a {
 
 
     .wrapper-logo {
-        width: 25px;
-        height: 40px;
+        width: 62px;
+    height: 52px;
     }
 
     .wrap-login li a {

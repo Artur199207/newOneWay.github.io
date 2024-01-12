@@ -21,3 +21,8 @@ let currentSlide = 0;
     setInterval(() => {
       nextSlide();
     }, 5000);
+
+    setTimeout(() => {
+      document.querySelector('.old-div').style.display = 'block';
+      document.querySelector('.wave').style.display = 'none'
+  }, 2000);
