@@ -1,15 +1,15 @@
-function changeColor(button) {
-  const buttons = document.querySelectorAll('.order-bording button');
-  buttons.forEach(btn => {
-    btn.style.backgroundColor = 'var(--color-number18)';
-    btn.style.color = 'var(--color-number9)';
-    btn.querySelector('span').style.color = 'var(--color-number2)';
-  });
+// function changeColor(button) {
+//   const buttons = document.querySelectorAll('.order-bording button');
+//   buttons.forEach(btn => {
+//     btn.style.backgroundColor = 'var(--color-number18)';
+//     btn.style.color = 'var(--color-number9)';
+//     btn.querySelector('span').style.color = 'var(--color-number2)';
+//   });
 
-  button.style.backgroundColor = 'var(--color-number2)';
-  button.style.color = 'var(--color-number4)';
-  button.querySelector('span').style.color = 'var(--color-number4)';
-}
+//   button.style.backgroundColor = 'var(--color-number2)';
+//   button.style.color = 'var(--color-number4)';
+//   button.querySelector('span').style.color = 'var(--color-number4)';
+// }
 
 
 
@@ -72,9 +72,9 @@ function addToPage() {
 }
 
 
-const toOrder = document.getElementById('order-to');
-toOrder.addEventListener('click',function(){
-  document.querySelector(".infocontentrigth").style.display = 'block'
-  document.querySelector('.order-background').style.display = 'none';
-})
+// const toOrder = document.getElementById('order-to');
+// toOrder.addEventListener('click',function(){
+//   document.querySelector(".infocontentrigth").style.display = 'block'
+//   document.querySelector('.order-background').style.display = 'none';
+// })
 
