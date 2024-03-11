@@ -44,7 +44,6 @@
 /* <!-- toUseMap start --> */
 .container-colabrator {
   width: 100%;
-  border: solid 1px;
   overflow: hidden;
   min-height: 1200px;
 }
@@ -58,6 +57,8 @@
 }
 
 .use1 {
+  max-width: 709px;
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -80,7 +81,18 @@
 .toUseMap9,
 .toUseMap8,
 .toUseMap7,
-.toUseMap6 {
+.toUseMap6,
+.toUseMap20,
+.toUseMap21,
+.toUseMap22,
+.toUseMap23,
+.toUseMap24,
+.toUseMap30,
+.toUseMap31,
+.toUseMap32,
+.toUseMap100,
+.toUseMap101,
+.toUseMap102 {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -200,7 +212,8 @@
   min-height: 22px;
 }
 
-#map3 {
+#map3,
+#map4 {
   min-height: 156px;
 }
 
@@ -272,16 +285,280 @@
   max-width: 995px;
   width: 100%;
   min-height: 942px;
-  border: solid 1px;
   position: relative;
   background-image: url(../img/toUse/phone.svg);
-  background-position: center;
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: 90%;
+  margin-right: 40px;
 }
-.touse-bottom{
+
+.touse-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   max-width: 760px;
   width: 100%;
   min-height: 607px;
-  border: solid 1px;
+}
+
+.touse-top {
+  max-width: 393px;
+  width: 100%;
+  min-height: 798px;
+  position: absolute;
+  left: 53%;
+  bottom: 219px;
+  border-radius: 77px;
+  background-image: url(../img/touse/010101.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.content-video {
+  max-width: 372px;
+  width: 100%;
+  min-height: 777px;
+  position: absolute;
+  border-radius: 64px;
+  z-index: 2;
+}
+
+.wrapper-yopUser {
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 61px;
+}
+
+.toUseMap20::before {
+  content: "";
+  position: absolute;
+  max-width: 11px;
+  width: 100%;
+  min-height: 111px;
+  background-image: url(../img/touse/Line11.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 106px;
+  left: 49px;
+}
+
+.toUseMap20::after,
+.toUseMap21::after,
+.toUseMap22::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/touse/Line-5.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 9px;
+  width: 100%;
+  min-height: 59px;
+  left: 47px;
+  top: 106px;
+}
+
+.toUseMap23::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/touse/Line-5.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 9px;
+  width: 100%;
+  min-height: 59px;
+  transform: rotate(270deg);
+  left: 108%;
+}
+
+.wrapper-yopUserRigth {
+  max-width: 350px;
+  width: 100%;
+}
+
+.toUseMap24::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/touse/Line-17.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 281px;
+  width: 100%;
+  min-height: 2px;
+  left: 100%;
+}
+
+/* <!-- toUseMap end --> */
+.wrapper-toUsepind {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+  gap: 14px;
+}
+
+.wrapper-toUsepind h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #263238;
+  text-transform: uppercase;
+}
+
+.toUse-line {
+  max-width: 263px;
+  width: 100%;
+  min-height: 2px;
+  border-radius: 28px;
+  background: #26AA9D;
+
+}
+
+.content-toUsen1 {
+  display: flex;
+  margin-top: 39px;
+  margin-bottom: 90px;
+  padding-inline: 120px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-video {
+  width: 100%;
+  min-height: 884px;
+  background-image: url(../img/touse/liner.svg);
+  background-position: 32% 0px;
+  background-repeat: no-repeat;
+  background-size: 29%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-inline: 3%;
+}
+
+.wrapper-info_toUse {
+  display: flex;
+  justify-content: space-between;
+  max-width: 775px;
+  width: 100%;
+  min-height: 582px;
+}
+
+.img-video {
+  max-width: 350px;
+  width: 100%;
+  min-height: 714px;
+  background-image: url(../img/touse/010101.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  right: 153px;
+  overflow: hidden;
+}
+.contlo-vid{
+  max-width: 321px;
+  width: 100%;
+  min-height: 535px;
+  position: absolute;
+  border-radius: 50px;
+  left: 15px;
+  top: 8px;
+}
+
+.to-left {
+  display: flex;
+  flex-direction: column;
+  gap: 61px;
+}
+
+.toUseMap30::after,
+.toUseMap31::after {
+  position: absolute;
+  left: 41px;
+  content: "";
+  min-height: 59px;
+  width: 12px;
+  background-image: url(../img/touse/Line-5.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 106px;
+}
+
+.toUseMap32::after {
+  position: absolute;
+  left: 52px;
+  content: "";
+  min-height: 86px;
+  width: 2px;
+  background-image: url(../img/touse/Line-8.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 100px;
+}
+
+.to-rigth {
+  display: flex;
+  flex-direction: column;
+  gap: 61px;
+  align-self: flex-end;
+}
+
+#map4::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/touse/Line-9.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 369px;
+  width: 100%;
+  min-height: 8px;
+  right: 100%;
+  top: 94px;
+}
+#map4::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/touse/Line-10.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 12px;
+  width: 100%;
+  min-height: 58px;
+  bottom: 159px;
+  left: 40px;
+}
+.toUseMap101::after{
+  content: "";
+  position: absolute;
+  background-image: url(../img/touse/Line-10.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 12px;
+  width: 100%;
+  min-height: 58px;
+  bottom: 107px;
+  left: 40px;
+}
+
+.rad1 {
+  align-items: flex-start
 }
