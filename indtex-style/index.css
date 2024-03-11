@@ -158,7 +158,8 @@ a {
 .wrap-login li a,
 .content-menu_footer li a,
 .content-menu_footer li button,
-.footer-menu2 li a {
+.footer-menu2 li a,
+.menOp li a {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -173,7 +174,8 @@ a {
 .wrap-login li a::after,
 .content-menu_footer li a:after,
 .content-menu_footer li button::after,
-.footer-menu2 li a::after {
+.footer-menu2 li a::after,
+.menOp li a::after {
     content: '';
     display: block;
     width: 0;
@@ -190,7 +192,8 @@ a {
 .wrap-login li a:hover::after,
 .content-menu_footer li a:hover::after,
 .content-menu_footer li button:hover::after,
-.footer-menu2 li a:hover::after {
+.footer-menu2 li a:hover::after,
+.menOp li a:hover::after {
     width: 100%;
 }
 
@@ -205,7 +208,8 @@ a {
 .wrap-login li:hover a,
 .content-menu_footer li a:hover,
 .content-menu_footer li button:hover,
-.footer-menu2 li a:hover {
+.footer-menu2 li a:hover,
+.menOp li a:hover {
     transition: .3s;
     cursor: pointer;
     color: var(--color-number2);
