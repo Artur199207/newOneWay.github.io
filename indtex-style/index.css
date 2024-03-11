@@ -907,7 +907,7 @@ a {
     .container_app {
         max-width: 1380px;
         min-height: 711px;
-        margin-bottom: 93px;
+        margin-bottom: 45px;
     }
 
     .content_phone {
@@ -1117,22 +1117,31 @@ a {
 
     .content-video {
         width: 325px;
-        height: 692px;
-        left: 34px;
+        height: 687px;
+        left: 13px;
+        top: 11.5px;
+        border-radius: 60px 60px 60px 60px;
+    }
+
+    .content-video video {
+        width: 320px;
+        height: 682px;
+        object-fit: fill;
     }
 
     .content-cursor_left {
         flex: 1 0 209px;
-        top: 46px;
-        right: 155px;
-        background-size: 100%;
+        left: 20.4%;
+        top: 469px;
+        width: 14.781vw;
     }
 
+
     .content-cursor_rigth {
-        background-size: 100% 100%;
-        right: 165px;
-        flex: 1 0 227px;
-        top: -71px;
+        width: 14.781vw;
+        background-size: 100% 107%;
+        right: 279px;
+        top: 389px;
         transform: rotate(330deg);
     }
 
@@ -1154,9 +1163,8 @@ a {
     .content-application {
         padding-top: 10px;
     }
-
-
 }
+
 
 
 
